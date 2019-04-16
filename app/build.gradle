@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
@@ -28,4 +29,8 @@ dependencies {
     implementation project(path: ':subfeature')
     implementation project(path: ':dummymapmodule')
     implementation project(path: ':anotherdummymapmodule')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
